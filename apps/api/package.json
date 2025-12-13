@@ -1,0 +1,19 @@
+{
+  "name": "@singkatin/api",
+  "version": "1.0.50",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "bun run --watch src/index.ts",
+    "build": "bun build --compile --minify-whitespace --minify-syntax --target bun --outfile out/server src/index.ts",
+    "start": "./out/server",
+    "lint": "eslint ."
+  },
+  "dependencies": {
+    "@elysiajs/cors": "^1.4.0",
+    "elysia": "^1.4.18"
+  },
+  "devDependencies": {
+    "bun-types": "latest"
+  }
+}
